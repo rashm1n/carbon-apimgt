@@ -51,8 +51,6 @@ public class OrganizationPurgeDAO {
     private boolean multiGroupAppSharingEnabled = false;
 
     private OrganizationPurgeDAO() {
-        APIManagerConfiguration configuration = ServiceReferenceHolder.getInstance()
-                .getAPIManagerConfigurationService().getAPIManagerConfiguration();
         multiGroupAppSharingEnabled = APIUtil.isMultiGroupAppSharingEnabled();
     }
 
